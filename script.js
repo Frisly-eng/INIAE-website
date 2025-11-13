@@ -69,15 +69,8 @@ if (contactForm) {
                        `*Empresa:* ${data.empresa || 'No especificada'}%0A%0A` +
                        `*Mensaje:* ${data.mensaje}`;
         
-        // Replace with your actual WhatsApp number
-        const whatsappNumber = '50212345678';
-        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
-        
-        // Open WhatsApp
-        window.open(whatsappURL, '_blank');
-        
-        // Show success message
-        alert('¡Gracias! Te redirigiremos a WhatsApp para completar tu consulta.');
+        // Open WhatsApp with prefilled message
+        window.open(`https://wa.me/50212345678?text=${message}`, '_blank');
         
         // Reset form
         contactForm.reset();
@@ -91,35 +84,11 @@ const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
-    if (currentScroll <= 0) {
-        navbar.style.boxShadow = 'none';
+    if (currentScroll > 100) {
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
     } else {
-        navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
     }
     
     lastScroll = currentScroll;
-});
-
-// ==================== Animation on Scroll ====================
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-}, observerOptions);
-
-// Observe elements for animation
-const animateElements = document.querySelectorAll('.problem-card, .service-card, .case-card, .process-step');
-animateElements.forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
 });
