@@ -57,23 +57,18 @@ if (contactForm) {
     contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        // Obtener botón de submit
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalBtnText = submitBtn.textContent;
         
-        // Deshabilitar botón y mostrar loading
         submitBtn.disabled = true;
         submitBtn.textContent = 'Enviando...';
         
-        // Obtener datos del formulario
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData);
         
-        // URL de tu Google Apps Script (DEBES CAMBIAR ESTA URL)
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwLsbBoRzVLEVJ2EGeEFIN7TCj3kpPrWRbGk4LQ8CogAEnnMA1Ni-i6z1gOs4tU8p0OZw/exec';
         
         try {
-            // Enviar datos a Google Sheets
             const response = await fetch(scriptURL, {
                 method: 'POST',
                 body: JSON.stringify(data),
@@ -85,36 +80,24 @@ if (contactForm) {
             const result = await response.json();
             
             if (result.status === 'success') {
-                // Mostrar mensaje de éxito
                 submitBtn.textContent = '¡Enviado! ✓';
                 submitBtn.style.background = '#10b981';
-                
-                // Resetear formulario
                 contactForm.reset();
                 
-                // Opcional: Mostrar alerta de éxito
-                alert('¡Gracias por tu consulta! Te contactaremos pronto.');
-                
-                // Restaurar botón después de 3 segundos
                 setTimeout(() => {
                     submitBtn.disabled = false;
                     submitBtn.textContent = originalBtnText;
                     submitBtn.style.background = '';
                 }, 3000);
             } else {
-                throw new Error('Error en el servidor');
+                throw new Error('Error en el envío');
             }
             
         } catch (error) {
             console.error('Error:', error);
-            
-            // Mostrar mensaje de error
             submitBtn.textContent = 'Error al enviar';
             submitBtn.style.background = '#ef4444';
             
-            alert('Hubo un error al enviar tu consulta. Por favor, intenta nuevamente o contáctanos por WhatsApp.');
-            
-            // Restaurar botón después de 3 segundos
             setTimeout(() => {
                 submitBtn.disabled = false;
                 submitBtn.textContent = originalBtnText;
@@ -123,7 +106,6 @@ if (contactForm) {
         }
     });
 }
-
 // ==================== Navbar Scroll Effect ====================
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
@@ -139,3 +121,4 @@ window.addEventListener('scroll', () => {
     
     lastScroll = currentScroll;
 });
+
