@@ -11,19 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <div class="logo">
+                <a href="#" class="logo">
                     <span class="logo-icon">🤖</span>
-                    <span class="logo-text">INIAE</span>
-                </div>
-                <ul class="nav-links">
+                    INIAE
+                </a>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#proceso">Proceso</a></li>
                     <li><a href="#casos">Casos de Uso</a></li>
-                    <li><a href="#contacto" class="btn-primary-small">Contacto</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contacto" class="btn-primary-small">Contactar</a></li>
                 </ul>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span></span>
@@ -35,101 +36,99 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-badge">
                     <span class="badge-icon">✨</span>
-                    Inteligencia Artificial para tu Empresa
+                    Soluciones de IA para empresas guatemaltecas
                 </div>
                 <h1 class="hero-title">
-                    Automatiza tu Negocio con <span class="gradient-text">Inteligencia Artificial</span>
+                    Transforma tu negocio con <span class="gradient-text">Inteligencia Artificial</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Ayudamos a pymes guatemaltecas a automatizar tareas repetitivas y mejorar la atención al cliente mediante soluciones de IA, sin requerir conocimientos técnicos.
+                    Automatiza tareas repetitivas, mejora la atención al cliente y optimiza tus procesos. Sin complicaciones técnicas, con resultados medibles desde el primer mes.
                 </p>
                 <div class="hero-cta">
-                    <a href="#contacto" class="btn-primary">Agenda una Consulta Gratuita</a>
-                    <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+                    <a href="#contacto" class="btn-primary">Agenda una consulta gratis</a>
+                    <a href="#servicios" class="btn-secondary">Ver servicios</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Horas ahorradas/semana</span>
+                        <div class="stat-number">60%</div>
+                        <div class="stat-label">Reducción de tiempo</div>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Atención automatizada</span>
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Atención automatizada</div>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">50%</span>
-                        <span class="stat-label">Reducción de costos</span>
+                        <div class="stat-number">3x</div>
+                        <div class="stat-label">Más productividad</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Problem + Solution -->
+    <!-- Problem-Solution -->
     <section class="problem-solution">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">¿Te identificas con esto?</h2>
+                <span class="section-badge">El Reto</span>
+                <h2 class="section-title">¿Te sientes identificado con esto?</h2>
             </div>
             <div class="problems-grid">
                 <div class="problem-card">
                     <div class="problem-icon">⏰</div>
-                    <h3>Tiempo perdido en tareas repetitivas</h3>
-                    <p>Tu equipo dedica horas a responder las mismas preguntas o procesar datos manualmente.</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">💸</div>
-                    <h3>Costos elevados de personal</h3>
-                    <p>Necesitas contratar más personas para manejar el volumen de trabajo y atención al cliente.</p>
+                    <h3>Tareas repetitivas</h3>
+                    <p>Tu equipo pierde horas contestando las mismas preguntas o ingresando datos manualmente.</p>
                 </div>
                 <div class="problem-card">
                     <div class="problem-icon">😓</div>
-                    <h3>Atención limitada a clientes</h3>
-                    <p>Solo puedes atender durante horas de oficina, perdiendo oportunidades de negocio.</p>
+                    <h3>Atención lenta</h3>
+                    <p>Los clientes esperan respuestas inmediatas, pero no tienes personal suficiente para atender 24/7.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">📊</div>
+                    <h3>Falta de análisis</h3>
+                    <p>Tienes datos valiosos pero no sabes cómo convertirlos en decisiones estratégicas.</p>
                 </div>
             </div>
-            
             <div class="solution-box">
-                <div class="solution-content">
-                    <h3>La IA puede resolver estos problemas</h3>
-                    <p>Con nuestras soluciones de Inteligencia Artificial, automatizas procesos, reduces costos y mejoras la experiencia de tus clientes, todo sin necesidad de conocimientos técnicos.</p>
-                </div>
+                <h3>La IA puede resolver estos problemas hoy</h3>
+                <p>Implementamos soluciones personalizadas que se adaptan a tu negocio, sin necesidad de conocimientos técnicos.</p>
             </div>
         </div>
     </section>
 
     <!-- Services -->
-    <section id="servicios" class="services">
+    <section class="services" id="servicios">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Nuestros Servicios</span>
-                <h2 class="section-title">Soluciones de IA adaptadas a tu negocio</h2>
-                <p class="section-description">Paquetes diseñados para empresas de todos los tamaños</p>
+                <span class="section-badge">Servicios</span>
+                <h2 class="section-title">Planes que se adaptan a tu negocio</h2>
+                <p class="section-description">Elige el paquete que mejor se ajuste a tus necesidades. Todos incluyen soporte técnico.</p>
             </div>
-            
             <div class="services-grid">
                 <!-- Básico -->
                 <div class="service-card">
                     <div class="service-header">
                         <h3>Básico</h3>
                         <div class="service-price">
-                            <span class="price">Q3,000</span>
-                            <span class="period">/ proyecto</span>
+                            <span class="price">Q1,500</span>
+                            <span class="period">/mes</span>
                         </div>
                     </div>
-                    <p class="service-description">Ideal para empezar a automatizar procesos simples</p>
+                    <p class="service-description">Perfecto para empezar a automatizar tu negocio</p>
                     <ul class="service-features">
-                        <li><span class="check">✓</span> Chatbot básico para WhatsApp o web</li>
-                        <li><span class="check">✓</span> Respuestas automáticas a preguntas frecuentes</li>
-                        <li><span class="check">✓</span> Hasta 500 mensajes/mes</li>
-                        <li><span class="check">✓</span> 1 mes de soporte</li>
+                        <li><span class="check">✓</span> Chatbot para WhatsApp</li>
+                        <li><span class="check">✓</span> Respuestas automáticas 24/7</li>
+                        <li><span class="check">✓</span> Hasta 500 conversaciones/mes</li>
+                        <li><span class="check">✓</span> Integración con 1 plataforma</li>
+                        <li><span class="check">✓</span> Soporte por email</li>
                     </ul>
-                    <a href="#contacto" class="btn-service">Comenzar</a>
+                    <a href="#contacto" class="btn-service">Empezar ahora</a>
                 </div>
 
                 <!-- Profesional -->
@@ -138,39 +137,40 @@
                     <div class="service-header">
                         <h3>Profesional</h3>
                         <div class="service-price">
-                            <span class="price">Q7,000</span>
-                            <span class="period">/ proyecto</span>
+                            <span class="price">Q3,500</span>
+                            <span class="period">/mes</span>
                         </div>
                     </div>
-                    <p class="service-description">Para empresas que buscan automatización completa</p>
+                    <p class="service-description">Para empresas que buscan resultados medibles</p>
                     <ul class="service-features">
-                        <li><span class="check">✓</span> Chatbot avanzado multicanal</li>
-                        <li><span class="check">✓</span> Automatización de procesos internos</li>
-                        <li><span class="check">✓</span> Análisis de datos con IA</li>
-                        <li><span class="check">✓</span> Mensajes ilimitados</li>
-                        <li><span class="check">✓</span> 3 meses de soporte</li>
-                        <li><span class="check">✓</span> Capacitación del equipo</li>
+                        <li><span class="check">✓</span> Todo lo del plan Básico</li>
+                        <li><span class="check">✓</span> Conversaciones ilimitadas</li>
+                        <li><span class="check">✓</span> Análisis de sentimiento</li>
+                        <li><span class="check">✓</span> Automatización de procesos</li>
+                        <li><span class="check">✓</span> Integración con CRM</li>
+                        <li><span class="check">✓</span> Dashboard de métricas</li>
+                        <li><span class="check">✓</span> Soporte prioritario</li>
                     </ul>
-                    <a href="#contacto" class="btn-service primary">Comenzar</a>
+                    <a href="#contacto" class="btn-service primary">Empezar ahora</a>
                 </div>
 
-                <!-- Enterprise -->
+                <!-- Empresarial -->
                 <div class="service-card">
                     <div class="service-header">
-                        <h3>Enterprise</h3>
+                        <h3>Empresarial</h3>
                         <div class="service-price">
-                            <span class="price">Q15,000+</span>
-                            <span class="period">/ proyecto</span>
+                            <span class="price">Personalizado</span>
                         </div>
                     </div>
-                    <p class="service-description">Soluciones personalizadas a gran escala</p>
+                    <p class="service-description">Solución a medida para grandes operaciones</p>
                     <ul class="service-features">
                         <li><span class="check">✓</span> Todo lo del plan Profesional</li>
-                        <li><span class="check">✓</span> Desarrollo personalizado</li>
-                        <li><span class="check">✓</span> Integración con sistemas existentes</li>
-                        <li><span class="check">✓</span> Dashboard de analytics</li>
-                        <li><span class="check">✓</span> Soporte prioritario 24/7</li>
+                        <li><span class="check">✓</span> IA entrenada con tus datos</li>
+                        <li><span class="check">✓</span> Múltiples integraciones</li>
+                        <li><span class="check">✓</span> API personalizada</li>
                         <li><span class="check">✓</span> Consultoría estratégica</li>
+                        <li><span class="check">✓</span> Capacitación de equipo</li>
+                        <li><span class="check">✓</span> Soporte 24/7 dedicado</li>
                     </ul>
                     <a href="#contacto" class="btn-service">Contactar</a>
                 </div>
@@ -179,43 +179,47 @@
     </section>
 
     <!-- Process -->
-    <section id="proceso" class="process">
+    <section class="process" id="proceso">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Cómo trabajamos</span>
-                <h2 class="section-title">Proceso simple en 4 pasos</h2>
+                <span class="section-badge">Proceso</span>
+                <h2 class="section-title">Cómo trabajamos</h2>
+                <p class="section-description">Un proceso simple y transparente de principio a fin</p>
             </div>
-            
             <div class="process-timeline">
                 <div class="process-step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Contacto y Análisis</h3>
-                        <p>Conversamos sobre tus necesidades y analizamos qué procesos puedes automatizar. Consulta inicial gratuita.</p>
+                        <h3>Consulta inicial</h3>
+                        <p>Conversamos sobre tus necesidades, objetivos y puntos de dolor. Identificamos las oportunidades de automatización.</p>
                     </div>
                 </div>
-                
                 <div class="process-step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Propuesta Personalizada</h3>
-                        <p>Te presentamos una solución adaptada a tu negocio con tiempos, costos y resultados esperados.</p>
+                        <h3>Propuesta personalizada</h3>
+                        <p>Diseñamos una solución a tu medida con tiempos, costos y resultados esperados claramente definidos.</p>
                     </div>
                 </div>
-                
                 <div class="process-step">
                     <div class="step-number">3</div>
                     <div class="step-content">
                         <h3>Implementación</h3>
-                        <p>Desarrollamos e implementamos la solución. Te mantenemos informado en cada etapa del proyecto.</p>
+                        <p>Desarrollamos e integramos la solución en tu operación actual sin interrumpir tu negocio.</p>
                     </div>
                 </div>
-                
                 <div class="process-step">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h3>Capacitación y Soporte</h3>
-                        <p>Capacitamos a tu equipo y te brindamos soporte continuo para asegurar el éxito de la implementación.</p>
+                        <h3>Capacitación y lanzamiento</h3>
+                        <p>Entrenamos a tu equipo y lanzamos la solución. Monitoreamos los primeros días para ajustar lo necesario.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Soporte continuo</h3>
+                        <p>Te acompañamos con soporte técnico, actualizaciones y optimizaciones según evolucionen tus necesidades.</p>
                     </div>
                 </div>
             </div>
@@ -223,75 +227,77 @@
     </section>
 
     <!-- Use Cases -->
-    <section id="casos" class="use-cases">
+    <section class="use-cases" id="casos">
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">Casos de Uso</span>
-                <h2 class="section-title">¿Cómo puede ayudar la IA a tu empresa?</h2>
+                <h2 class="section-title">IA aplicada a tu industria</h2>
             </div>
-            
             <div class="cases-grid">
                 <div class="case-card">
-                    <div class="case-icon">💬</div>
-                    <h3>Atención al Cliente 24/7</h3>
-                    <p>Chatbots inteligentes que responden preguntas, toman pedidos y resuelven dudas en cualquier momento, liberando tiempo de tu equipo.</p>
+                    <div class="case-icon">🍽️</div>
+                    <h3>Restaurantes</h3>
+                    <p>Automatiza reservas, pedidos por WhatsApp y responde dudas sobre el menú 24/7.</p>
                 </div>
-                
                 <div class="case-card">
-                    <div class="case-icon">📊</div>
-                    <h3>Análisis de Datos</h3>
-                    <p>Procesa grandes volúmenes de información y obtén insights valiosos para tomar mejores decisiones de negocio.</p>
+                    <div class="case-icon">🏥</div>
+                    <h3>Clínicas</h3>
+                    <p>Agenda citas, envía recordatorios automáticos y responde preguntas frecuentes de pacientes.</p>
                 </div>
-                
                 <div class="case-card">
-                    <div class="case-icon">✉️</div>
-                    <h3>Automatización de Emails</h3>
-                    <p>Respuestas automáticas personalizadas, seguimiento de leads y gestión inteligente de tu correo electrónico.</p>
+                    <div class="case-icon">🛍️</div>
+                    <h3>Retail</h3>
+                    <p>Asistente de ventas virtual, seguimiento de pedidos y recomendaciones personalizadas.</p>
                 </div>
-                
                 <div class="case-card">
-                    <div class="case-icon">📝</div>
-                    <h3>Generación de Contenido</h3>
-                    <p>Crea descripciones de productos, posts para redes sociales y material de marketing de forma automática.</p>
+                    <div class="case-icon">📢</div>
+                    <h3>Agencias</h3>
+                    <p>Automatiza reportes, análisis de campañas y gestión de clientes con IA.</p>
                 </div>
-                
                 <div class="case-card">
-                    <div class="case-icon">🔄</div>
-                    <h3>Automatización de Procesos</h3>
-                    <p>Conecta tus herramientas favoritas y automatiza tareas repetitivas como entrada de datos, reportes y seguimientos.</p>
+                    <div class="case-icon">🚚</div>
+                    <h3>Distribuidoras</h3>
+                    <p>Procesa pedidos automáticamente, optimiza rutas y gestiona inventarios inteligentemente.</p>
                 </div>
-                
                 <div class="case-card">
-                    <div class="case-icon">🎯</div>
-                    <h3>Segmentación de Clientes</h3>
-                    <p>Identifica patrones de comportamiento y segmenta tu audiencia para campañas de marketing más efectivas.</p>
+                    <div class="case-icon">🏢</div>
+                    <h3>Servicios</h3>
+                    <p>Calificación de leads, seguimiento automatizado y análisis de satisfacción del cliente.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About -->
-    <section class="about">
+    <section class="about" id="nosotros">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <span class="section-badge">Sobre INIAE</span>
-                    <h2>Democratizando la IA para empresas guatemaltecas</h2>
-                    <p>Somos un equipo especializado en integración de Inteligencia Artificial para pequeñas y medianas empresas. Nuestra misión es hacer la tecnología de IA accesible y práctica para negocios que buscan crecer y optimizar sus operaciones.</p>
-                    <p>Con formación en Ingeniería Industrial y especialización en IA, entendemos tanto los procesos de negocio como la tecnología, permitiéndonos crear soluciones que realmente funcionan para tu empresa.</p>
-                    <div class="about-features">
-                        <div class="about-feature">
-                            <span class="feature-icon">🎓</span>
-                            <span>Formación especializada en IA</span>
-                        </div>
-                        <div class="about-feature">
-                            <span class="feature-icon">🇬🇹</span>
-                            <span>Enfoque local guatemalteco</span>
-                        </div>
-                        <div class="about-feature">
-                            <span class="feature-icon">💡</span>
-                            <span>Soluciones prácticas y accesibles</span>
-                        </div>
+                    <h2>Hacemos la IA accesible para todas las empresas</h2>
+                    <p>
+                        En INIAE creemos que la Inteligencia Artificial no debería ser solo para grandes corporaciones. Trabajamos con pymes guatemaltecas para democratizar el acceso a la tecnología que está transformando negocios en todo el mundo.
+                    </p>
+                    <p>
+                        No necesitas un equipo técnico ni grandes inversiones. Nosotros nos encargamos de todo: desde el diseño hasta la implementación y el soporte continuo.
+                    </p>
+                </div>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <span class="feature-icon">🎯</span>
+                        <span>Soluciones personalizadas a tu negocio</span>
+                    </div>
+                    <div class="about-feature">
+                        <span class="feature-icon">🇬🇹</span>
+                        <span>Atención local en Guatemala</span>
+                    </div>
+                    <div class="about-feature">
+                        <span class="feature-icon">💡</span>
+                        <span>Sin jerga técnica, todo explicado claramente</span>
+                    </div>
+                    <div class="about-feature">
+                        <span class="feature-icon">📈</span>
+                        <span>Resultados medibles desde el primer mes</span>
                     </div>
                 </div>
             </div>
@@ -299,71 +305,65 @@
     </section>
 
     <!-- FAQ -->
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">Preguntas Frecuentes</span>
-                <h2 class="section-title">¿Tienes dudas?</h2>
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Preguntas Frecuentes</h2>
             </div>
-            
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿Necesito conocimientos técnicos para usar las soluciones de IA?</span>
+                        ¿Necesito conocimientos técnicos para usar sus servicios?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>No. Diseñamos nuestras soluciones para que sean fáciles de usar. Te capacitamos a ti y a tu equipo, y brindamos soporte continuo.</p>
+                        <p>No, para nada. Nos encargamos de toda la parte técnica. Tú solo necesitas tener claro qué procesos quieres mejorar, y nosotros diseñamos e implementamos la solución. Además, capacitamos a tu equipo para que puedan usar el sistema sin problemas.</p>
                     </div>
                 </div>
-                
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿Cuánto tiempo toma implementar una solución?</span>
+                        ¿Cuánto tiempo toma implementar una solución?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Depende de la complejidad. Un chatbot básico puede estar listo en 1-2 semanas, mientras que soluciones más complejas pueden tomar 4-6 semanas.</p>
+                        <p>Depende de la complejidad, pero en promedio un chatbot básico puede estar listo en 1-2 semanas. Soluciones más complejas pueden tomar de 3-6 semanas. Te damos un cronograma claro desde el inicio.</p>
                     </div>
                 </div>
-                
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿La consulta inicial tiene costo?</span>
+                        ¿Qué pasa si mi negocio crece y necesito más funciones?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>No, la primera consulta es completamente gratuita. Conversamos sobre tus necesidades y te asesoramos sobre las mejores opciones para tu negocio.</p>
+                        <p>Las soluciones están diseñadas para escalar. Puedes empezar con un plan básico y conforme creces, agregar más funcionalidades. No hay penalizaciones por cambiar de plan y te ayudamos en la transición.</p>
                     </div>
                 </div>
-                
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿Qué pasa después de la implementación?</span>
+                        ¿Funciona con las herramientas que ya uso?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Incluimos soporte post-implementación según tu plan. Además, ofrecemos paquetes de mantenimiento mensual para asegurar que todo funcione perfectamente.</p>
+                        <p>Sí, podemos integrar con la mayoría de plataformas populares: WhatsApp Business, Instagram, Facebook, Excel, Google Sheets, CRMs, sistemas de inventario y más. Si usas algo específico, consúltanos y encontramos la forma de integrarlo.</p>
                     </div>
                 </div>
-                
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿Funciona para mi industria?</span>
+                        ¿Ofrecen garantía o periodo de prueba?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>La IA es versátil y se adapta a casi cualquier industria: retail, servicios, manufactura, educación, salud, etc. En la consulta evaluamos tu caso específico.</p>
+                        <p>Sí, ofrecemos una garantía de satisfacción. Si en los primeros 30 días no ves resultados o no estás satisfecho, trabajamos contigo para ajustar la solución sin costo adicional. Queremos que estés 100% satisfecho.</p>
                     </div>
                 </div>
-                
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿Puedo escalar la solución más adelante?</span>
+                        ¿Los datos de mi empresa están seguros?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Sí, diseñamos soluciones escalables. Puedes empezar con algo básico y expandir funcionalidades conforme tu negocio crece.</p>
+                        <p>Absolutamente. Usamos encriptación de nivel empresarial y cumplimos con estándares internacionales de seguridad. Tus datos nunca se comparten con terceros y tienes control total sobre ellos.</p>
                     </div>
                 </div>
             </div>
@@ -371,60 +371,54 @@
     </section>
 
     <!-- Contact -->
-    <section id="contacto" class="contact">
+    <section class="contact" id="contacto">
         <div class="container">
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h2>¿Listo para transformar tu negocio con IA?</h2>
-                    <p>Agenda una consulta gratuita y descubre cómo la Inteligencia Artificial puede ayudar a tu empresa.</p>
-                    
+                    <h2>¿Listo para transformar tu negocio?</h2>
+                    <p>Agenda una consulta gratuita y descubre cómo la IA puede ayudarte.</p>
                     <div class="contact-methods">
-                        <a href="https://wa.me/50212345678?text=Hola%2C%20me%20interesa%20una%20consulta%20sobre%20servicios%20de%20IA" class="contact-method whatsapp" target="_blank">
+                        <a href="https://wa.me/50212345678?text=Hola! Me gustaría una consulta sobre servicios de IA" class="contact-method whatsapp">
                             <div class="method-icon">💬</div>
                             <div class="method-text">
-                                <span class="method-label">WhatsApp</span>
-                                <span class="method-value">+502 4140-4945</span>
+                                <div class="method-label">WhatsApp</div>
+                                <div class="method-value">+502 1234-5678</div>
                             </div>
                         </a>
-                        
                         <a href="mailto:contacto@iniae.com" class="contact-method">
-                            <div class="method-icon">✉️</div>
+                            <div class="method-icon">📧</div>
                             <div class="method-text">
-                                <span class="method-label">Email</span>
-                                <span class="method-value">frislybussines@gmail.com</span>
+                                <div class="method-label">Email</div>
+                                <div class="method-value">contacto@iniae.com</div>
                             </div>
                         </a>
                     </div>
                 </div>
-                
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="nombre">Nombre completo</label>
                             <input type="text" id="nombre" name="nombre" required>
                         </div>
-                        
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        
                         <div class="form-group">
                             <label for="telefono">Teléfono</label>
                             <input type="tel" id="telefono" name="telefono" required>
                         </div>
-                        
                         <div class="form-group">
                             <label for="empresa">Empresa</label>
                             <input type="text" id="empresa" name="empresa">
                         </div>
-                        
                         <div class="form-group">
-                            <label for="mensaje">¿Qué te gustaría automatizar?</label>
+                            <label for="mensaje">¿Cómo podemos ayudarte?</label>
                             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
                         </div>
-                        
-                        <button type="submit" class="btn-primary">Enviar Consulta</button>
+                        <button type="submit" class="btn-primary" style="width: 100%;">
+                            Enviar mensaje
+                        </button>
                     </form>
                 </div>
             </div>
@@ -436,49 +430,46 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="logo">
+                    <a href="#" class="logo">
                         <span class="logo-icon">🤖</span>
-                        <span class="logo-text">INIAE</span>
-                    </div>
-                    <p>Integración de IA a Empresas<br>Guatemala</p>
+                        INIAE
+                    </a>
+                    <p>Hacemos la Inteligencia Artificial accesible para todas las empresas guatemaltecas.</p>
                 </div>
-                
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Servicios</h4>
+                        <h4>Enlaces</h4>
                         <ul>
-                            <li><a href="#servicios">Chatbots</a></li>
-                            <li><a href="#servicios">Automatización</a></li>
-                            <li><a href="#servicios">Análisis de Datos</a></li>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#proceso">Proceso</a></li>
+                            <li><a href="#casos">Casos de Uso</a></li>
                         </ul>
                     </div>
-                    
                     <div class="footer-column">
-                        <h4>Empresa</h4>
+                        <h4>Contacto</h4>
                         <ul>
-                            <li><a href="#proceso">Cómo trabajamos</a></li>
-                            <li><a href="#casos">Casos de uso</a></li>
-                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="#contacto">Consulta gratis</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="mailto:contacto@iniae.com">Email</a></li>
+                            <li><a href="https://wa.me/50212345678">WhatsApp</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2025 INIAE. Todos los derechos reservados.</p>
+                <p>&copy; 2025 INIAE - Integración de IA a Empresas. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/50212345678?text=Hola%2C%20me%20interesa%20una%20consulta%20sobre%20servicios%20de%20IA" class="whatsapp-float" target="_blank">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.732 5.492 2.016 7.8L.064 31.36l7.8-2.048A15.934 15.934 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0z" fill="#25D366"/>
-            <path d="M25.2 22.4c-.364 1.028-1.82 1.884-2.98 2.132-.792.168-1.824.3-5.3-.984-4.448-1.64-7.32-6.148-7.544-6.432-.216-.284-1.776-2.364-1.776-4.508 0-2.144 1.124-3.2 1.524-3.636.4-.436.872-.544 1.164-.544.292 0 .584.004.84.016.268.012.628-.1.984.752.364.872 1.244 3.032 1.352 3.252.108.22.18.476.036.76-.144.284-.216.46-.432.708-.216.248-.456.552-.652.74-.216.208-.44.432-.188.848.252.416 1.12 1.848 2.404 2.992 1.652 1.472 3.044 1.932 3.476 2.148.432.216.684.18.936-.108.252-.288 1.08-1.26 1.368-1.692.288-.432.576-.36.972-.216.396.144 2.516 1.188 2.948 1.404.432.216.72.324.824.504.104.18.104 1.032-.26 2.06z" fill="#FFF"/>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/50212345678?text=Hola! Me gustaría una consulta sobre servicios de IA" class="whatsapp-float" target="_blank">
+        <svg width="32" height="32" fill="white" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
         </svg>
     </a>
 
     <script src="script.js"></script>
 </body>
-
 </html>
