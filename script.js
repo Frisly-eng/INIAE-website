@@ -70,7 +70,7 @@ if (contactForm) {
         const data = Object.fromEntries(formData);
         
         // URL de tu Google Apps Script (CAMBIA ESTA URL)
-        const scriptURL = 'PEGA_AQUI_TU_URL_DE_GOOGLE_APPS_SCRIPT';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzPs90T-9J2-zJZCES_BTtjMnwI7oyHoBHWRdsYgXeaBqK05uO4hSTLZ5WdYBd4PFpX7A/exec';
         
         try {
             // Enviar datos a Google Sheets
@@ -138,4 +138,5 @@ window.addEventListener('scroll', () => {
     
     lastScroll = currentScroll;
 });
+
 
