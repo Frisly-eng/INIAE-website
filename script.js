@@ -69,7 +69,7 @@ if (contactForm) {
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData);
         
-        // URL de tu Google Apps Script (CAMBIA ESTA URL)
+        // URL de tu Google Apps Script (DEBES CAMBIAR ESTA URL)
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwLsbBoRzVLEVJ2EGeEFIN7TCj3kpPrWRbGk4LQ8CogAEnnMA1Ni-i6z1gOs4tU8p0OZw/exec';
         
         try {
@@ -123,6 +123,7 @@ if (contactForm) {
         }
     });
 }
+
 // ==================== Navbar Scroll Effect ====================
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
@@ -131,13 +132,10 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
     }
     
     lastScroll = currentScroll;
 });
-
-
-
