@@ -61,8 +61,8 @@ if (contactForm) {
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData);
         
-        // ⚠️ CAMBIA ESTA URL POR LA TUYA
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLsbBoRzVLEVJ2EGeEFIN7TCj3kpPrWRbGk4LQ8CogAEnnMA1Ni-i6z1gOs4tU8p0OZw/exec';
+        // cambiada
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz5Q-b2xxj1glH_Ig_rkF0rJ3gSdNKGSS4Kmh-C2odz7XWBvsqkp7o1zfbmC-DqvbNXfw/exec';
         
         try {
             const response = await fetch(scriptURL, {
@@ -113,3 +113,4 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
     }
 });
+
