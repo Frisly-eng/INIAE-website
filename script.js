@@ -21,7 +21,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                     behavior: 'smooth',
                     block: 'start'
                 });
-                // Close mobile menu if open
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
                     mobileMenuBtn.classList.remove('active');
@@ -39,11 +38,7 @@ faqItems.forEach(item => {
     
     question.addEventListener('click', () => {
         const isActive = item.classList.contains('active');
-        
-        // Close all items
         faqItems.forEach(faq => faq.classList.remove('active'));
-        
-        // Open clicked item if it wasn't active
         if (!isActive) {
             item.classList.add('active');
         }
@@ -66,6 +61,7 @@ if (contactForm) {
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData);
         
+        // ⚠️ CAMBIA ESTA URL POR LA TUYA
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwLsbBoRzVLEVJ2EGeEFIN7TCj3kpPrWRbGk4LQ8CogAEnnMA1Ni-i6z1gOs4tU8p0OZw/exec';
         
         try {
@@ -95,7 +91,7 @@ if (contactForm) {
             
         } catch (error) {
             console.error('Error:', error);
-            submitBtn.textContent = 'Error al enviar';
+            submitBtn.textContent = 'Error al enviar ✗';
             submitBtn.style.background = '#ef4444';
             
             setTimeout(() => {
@@ -107,18 +103,13 @@ if (contactForm) {
     });
 }
 // ==================== Navbar Scroll Effect ====================
-let lastScroll = 0;
-const navbar = document.querySelector('.navbar');
-
 window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 100) {
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.style.background = 'rgba(255, 255, 255, 1)';
+        navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
     } else {
+        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
         navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
     }
-    
-    lastScroll = currentScroll;
 });
-
