@@ -62,7 +62,7 @@ if (contactForm) {
         const data = Object.fromEntries(formData);
         
         // cambiada
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwkJMNvNyIZqclyUbzlMeo98gOrpnY09o7FmfXaCRtOOkqGWPWYCwOAeXt-fUmoirx8fw/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwDeSLEmNK3YBtr05UUpf0MgsRva1WSoscJ17FcNIM3EoOn3CPS5VZMDHrF_QaaCVdlgA/exec';
         
         try {
             const response = await fetch(scriptURL, {
@@ -113,5 +113,6 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
     }
 });
+
 
 
