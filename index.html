@@ -378,14 +378,14 @@
                     <h2>¿Listo para transformar tu negocio?</h2>
                     <p>Agenda una consulta gratuita y descubre cómo la IA puede ayudarte.</p>
                     <div class="contact-methods">
-                        <a href="https://wa.me/50212345678?text=Hola! Me gustaría una consulta sobre servicios de IA" class="contact-method whatsapp">
+                        <a href="https://wa.me/50241404945?text=Hola! Me gustaría una consulta sobre servicios de IA" class="contact-method whatsapp">
                             <div class="method-icon">💬</div>
                             <div class="method-text">
                                 <div class="method-label">WhatsApp</div>
                                 <div class="method-value">+502 4140 4945</div>
                             </div>
                         </a>
-                        <a href="mailto:contacto@iniae.com" class="contact-method">
+                        <a href="mailto:frislybussines@gmail.com" class="contact-method">
                             <div class="method-icon">📧</div>
                             <div class="method-text">
                                 <div class="method-label">Email</div>
@@ -395,22 +395,54 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form id="contactForm" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                        <input type="hidden" name="form-name" value="contacto">
-                            <label for="nombre">Nombre completo</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="empresa">Empresa</label>
-                            <input type="text" id="empresa" name="empresa">
+<form id="contactForm" name="contacto-iniae" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <!-- Campo oculto requerido por Netlify -->
+    <input type="hidden" name="form-name" value="contacto-iniae">
+    
+    <!-- Honeypot para protección contra spam -->
+    <p style="display: none;">
+        <label>No llenar si eres humano: <input name="bot-field"></label>
+    </p>
+    
+    <div class="form-group">
+        <label for="nombre">Nombre completo *</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="telefono">Teléfono/WhatsApp</label>
+        <input type="tel" id="telefono" name="telefono">
+    </div>
+    
+    <div class="form-group">
+        <label for="empresa">Empresa</label>
+        <input type="text" id="empresa" name="empresa">
+    </div>
+    
+    <div class="form-group">
+        <label for="servicio">Servicio de interés</label>
+        <select id="servicio" name="servicio">
+            <option value="">Selecciona una opción</option>
+            <option value="chatbot">Chatbot con IA</option>
+            <option value="automatizacion">Automatización de Procesos</option>
+            <option value="analisis">Análisis de Datos con IA</option>
+            <option value="consultoria">Consultoría</option>
+            <option value="otro">Otro</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="mensaje">Mensaje *</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos sobre tu proyecto o necesidad..."></textarea>
+    </div>
+    
+    <button type="submit" class="btn-primary" style="width: 100%;">Enviar consulta</button>
+</form>
                         </div>
                         <div class="form-group">
                             <label for="mensaje">¿Cómo podemos ayudarte?</label>
@@ -473,6 +505,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
