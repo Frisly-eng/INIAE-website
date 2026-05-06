@@ -1,2 +1,2 @@
-# INIAE-website
-Landing page para INIAE (nombre temporal)
+# Noux
+Landing page para Noux
